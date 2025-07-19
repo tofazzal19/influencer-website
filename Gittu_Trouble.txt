@@ -1,0 +1,57 @@
+PS C:\HTML_Projects\influencer-website> git push --set-upstream origin main
+remote: Permission to tofazzal19/influencer-website.git denied to tofazzal707.
+fatal: unable to access 'https://github.com/tofazzal19/influencer-website.git/': The requested URL returned error: 403
+##############Solutions######################Generate and Use an SSH Key for GitHub#######
+🗝 Generate SSH Key
+Run this in Git Bash:
+
+bash
+Copy
+Edit
+ssh-keygen -t ed25519 -C "your_email@example.com"
+When it asks:
+
+bash
+Copy
+Edit
+Enter file in which to save the key (/c/Users/IT_Support/.ssh/id_ed25519):
+Just press Enter to accept the default.
+
+Also press Enter again when asked for a passphrase (optional).
+
+2. 🧠 Add SSH Key to the SSH Agent
+Start the agent and add your new key:
+
+bash
+Copy
+Edit
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+3. 📋 Copy Your Public Key
+Run this to display your public key:
+
+bash
+Copy
+Edit
+cat ~/.ssh/id_ed25519.pub
+Copy all the output. It should start with:
+
+Copy
+Edit
+ssh-ed25519 AAAAC3...
+4. 🔗 Add the Key to GitHub
+Go to: https://github.com/settings/keys
+
+Click "New SSH key"
+
+Title: e.g. "My Laptop"
+
+Paste the key from step 3
+
+Click Add SSH key
+
+5. 🧪 Test Connection to GitHub
+bash
+Copy
+Edit
+ssh -T git@github.com
