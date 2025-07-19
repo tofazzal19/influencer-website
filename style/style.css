@@ -173,4 +173,26 @@ body {
   color: #666;
   margin-bottom: 20px;
 }
+/* Footer css */
+.footer {
+  background-color: #0A0826;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+.footer h2 {
+  margin-bottom: 10px;
+}
+.footer p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.social-icons a {
+  margin: 0 8px;
+}
+.social-icons img {
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
 
