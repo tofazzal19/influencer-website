@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 body {
+    margin-left: 120px;
+    margin-right: 120px;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
   color: #333;
@@ -15,6 +17,7 @@ body {
 }
 
 .navbar {
+    
   background: white;
   padding: 20px 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
@@ -35,4 +38,53 @@ body {
     margin-left: 20px;
     color: #444;
     text-decoration: none;
+}
+
+/* Hero Section */
+.hero{
+    padding: 64px 0;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.container-hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.hero-text{
+    max-width: 500px;
+    flex: 1;
+}
+.hero-text h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.hero-text p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+.btn {
+  display: inline-block;
+  background-color: #FF3E80;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.hero-text {
+    margin-bottom: 30px;
+  }
+  .hero-img img {
+    width: 80%;
+    margin: 0 auto;
+  }
+.hero-image{
+    background-image: url('../images/Circle\ design.svg');
 }
